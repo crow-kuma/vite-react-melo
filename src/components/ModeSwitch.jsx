@@ -6,7 +6,7 @@ const ModeSwitch = () => {
 					<p>1メロディーレーン = 338kg<br />最小馬体重勝利記録で計算！</p>
 				</div>
 				<div className="selectMenuRadio">
-					<input type="radio" name="menu" value="standard" id="radioStandard" checked/>
+					<input type="radio" name="menu" value="standard" id="radioStandard"/>
 					<label>標準モード</label>
 				</div>
 			</div>
