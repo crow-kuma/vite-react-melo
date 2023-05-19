@@ -6,26 +6,27 @@ import {
   } from "react-router-dom";
 import Title from "./components/Title";
 import ModeSwitch from "./components/ModeSwitch";
-import NoResult from "./components/NoResult";
+import Form from "./components/Form";
 import Standard from "./components/Standard";
 import Various from "./components/Various";
 import Author from "./components/Author";
-import './App.scss'
+import 'sanitize.css';
+import './App.scss';
 
 function App() {
   return (
-    <div>
-      <Title />
-      <ModeSwitch />
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<NoResult />} />
-          <Route path="/standard" element={<Standard />} />
-          <Route path="/various" element={<Various />} />
-        </Routes>
-      </Router>
-      <Author />
-    </div>
+    <Router>
+      <div>
+        <Title />
+        <ModeSwitch />
+        <Form />
+          <Routes>
+            <Route path="/" element={<Standard />} />
+            <Route path="/various" element={<Various />} />
+          </Routes>
+        <Author />
+      </div>
+    </Router>
   )
 }
 

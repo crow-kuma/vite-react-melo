@@ -1,11 +1,11 @@
-import StandardForm from './StandardForm'
 import StandardResult from './StandardResult'
+import StandardShare from './StandardShare'
 
 const Standard = () => {
 	return (
 		<div>
-			<StandardForm />
 			<StandardResult />
+			<StandardShare />
 		</div>
 	)
 }

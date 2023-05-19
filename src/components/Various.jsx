@@ -1,11 +1,11 @@
-import VariousForm from './VariousForm'
 import VariousResult from './VariousResult'
+import VariousShare from './VariousShare'
 
 const Various = () => {
 	return (
 		<div>
-			<VariousForm />
 			<VariousResult />
+			<VariousShare />
 		</div>
 	)
 }
