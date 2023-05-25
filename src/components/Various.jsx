@@ -4,7 +4,7 @@ import VariousShare from './VariousShare'
 const Various = () => {
 	return (
 		<div>
-			<VariousResult />
+			<VariousResult/>
 			<VariousShare />
 		</div>
 	)

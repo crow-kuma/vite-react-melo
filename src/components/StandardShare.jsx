@@ -5,11 +5,6 @@ import imgMeloCopied from '../assets/images/MelodyLaneCopied.png'
 import imgMeloAgain from '../assets/images/MelodyLaneAgain.png'
 import imgMeloFlying from '../assets/images/MelodyLaneFlying.png'
 
-// VariousShare.jsxと中身が同じ。データの内容が同じなら、統合する。
-// なお、その場合は、Standard.jsxとVarious.jsxの構成も変更になる。
-// Standard.jsxはStandardResult.jsxの中身をそのまま移し、
-// Various.jsxはVariousResult.jsxの中身をそのまま移す。
-
 const StandardShare = () => {
 	return (
 		<div className="resultShare">
