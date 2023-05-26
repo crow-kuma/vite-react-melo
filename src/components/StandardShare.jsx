@@ -8,22 +8,24 @@ import imgMeloFlying from '../assets/images/MelodyLaneFlying.png'
 const StandardShare = () => {
 	return (
 		<div className="resultShare">
-			<div className="resultShareTwitter">
-				<button target="_blank" rel="noopener noreferrer">
-					<img src={imgMeloTwitter} alt="メロディーレーンと青い鳥" />
-					<p>Twitterで<br />シェア？</p>
-				</button>
-			</div>
-			<div className="resultShareLINE">
-				<img src={imgMeloLINE} alt="スマホを持つメロディーレーン" />
-				<p>LINEで<br />シェア？</p>
-			</div>
-			<div className="resultShareCopy">
-				<button type="button" >
-					<img src={imgMeloCopy} alt="コピーするメロディーレーン" />
-					<img src={imgMeloCopied} alt="コピー完了したメロディーレーン" />
-					<p>結果をコピー？→コピー完了！</p>
-				</button>
+			<div className="resultShareSNS">
+				<div className="resultShareTwitter">
+					<button target="_blank" rel="noopener noreferrer">
+						<img src={imgMeloTwitter} alt="メロディーレーンと青い鳥" />
+						<p>Twitterで<br />シェア？</p>
+					</button>
+				</div>
+				<div className="resultShareLINE">
+					<img src={imgMeloLINE} alt="スマホを持つメロディーレーン" />
+					<p>LINEで<br />シェア？</p>
+				</div>
+				<div className="resultShareCopy">
+					<button type="button" >
+						<img src={imgMeloCopy} alt="コピーするメロディーレーン" />
+						<img src={imgMeloCopied} alt="コピー完了したメロディーレーン" />
+						<p>結果をコピー？→コピー完了！</p>
+					</button>
+				</div>
 			</div>
 			<section className="again">
 				<button type="button" className="againButton">

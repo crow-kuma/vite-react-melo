@@ -7,7 +7,7 @@ const ModeSwitch = () => {
 				<div className="selectMenuBalloon">
 					<p>1メロディーレーン = 338kg<br />最小馬体重勝利記録で計算！</p>
 				</div>
-				<div className="selectMenuRadio">
+				<div className="selectMenuLink">
 					<Link to="/">標準モード</Link>
 				</div>
 			</div>
@@ -15,7 +15,7 @@ const ModeSwitch = () => {
 				<div className="selectMenuBalloon">
 					<p>標準&うまれたて！<br />2種類のメロディーレーンと<br />にんじんで計算！</p>
 				</div>
-				<div className="selectMenuRadio">
+				<div className="selectMenuLink">
 					<Link to="/various">いろいろモード</Link>
 				</div>
 			</div>
