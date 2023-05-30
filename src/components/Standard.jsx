@@ -1,9 +1,16 @@
 import StandardResult from './StandardResult'
 import StandardShare from './StandardShare'
 
+import { useContext } from 'react'
+import { ResultContext } from '../App'
+
 const Standard = () => {
+	const { isOpen } = useContext(ResultContext);
 	return (
-		<div>
+		<div style={{
+			display: isOpen ? 'block' : 'none',
+			transition: '1s',
+		}}>
 			<StandardResult />
 			<StandardShare />
 		</div>

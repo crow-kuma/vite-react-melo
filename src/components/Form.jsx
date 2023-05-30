@@ -18,7 +18,7 @@ const Form = (props) => {
 				<p>{props.weight === 0 ? "？？？" : props.weight}kgの</p>
 				<p>{props.weightName === "" ? "？？？" : props.weightName}は…</p>
 			</div>
-			<button type="button" className="mainButton">何メロディーレーン？</button>
+			<button type="button" className="mainButton" onClick={props.openResult}>何メロディーレーン？</button>
 		</section>
 	);
 }

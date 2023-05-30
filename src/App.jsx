@@ -18,6 +18,8 @@ export const ResultContext = createContext();
 function App() {
   const [weight, setWeight] = useState(0);
 	const [weightName, setWeightName] = useState('');
+  const [isStandard, setIsStandard] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const melo = 338;
   const meloBB = 20;
   const standardResult = Math.round(weight / melo * 100) / 100;
@@ -25,14 +27,33 @@ function App() {
   const variousResultBB = Math.floor(weight % melo / meloBB);
   const variousResultCarrot = Math.round(((weight % melo) % meloBB) / 0.2);
 
+  const standardModeSwitch = () => {
+    setIsStandard(true);
+  }
+  const variousModeSwitch = () => {
+    setIsStandard(false);
+  }
+  const openResult = () => {
+    setIsOpen(true);
+  }
 
   return (
-    <ResultContext.Provider value={{standardResult, variousResult, variousResultBB, variousResultCarrot}}>
+    <ResultContext.Provider value={{standardResult, variousResult, variousResultBB, variousResultCarrot, isOpen}}>
       <Router>
         <div>
           <Title />
-          <ModeSwitch />
-          <Form weight={weight} setWeight={setWeight} weightName={weightName} setWeightName={setWeightName}/>
+          <ModeSwitch 
+              isStandard={isStandard} 
+              standardModeSwitch={standardModeSwitch} 
+              variousModeSwitch={variousModeSwitch}
+          />
+          <Form 
+              weight={weight} 
+              setWeight={setWeight} 
+              weightName={weightName} 
+              setWeightName={setWeightName}
+              openResult={openResult}
+          />
             <Routes>
               <Route path="/" element={<Standard />} />
               <Route path="/various" element={<Various />} />

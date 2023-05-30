@@ -5,7 +5,7 @@ import imgMeloStd from '../assets/images/MelodyLaneStd.png'
 const StandardResult = () => {
 	const { standardResult } = useContext(ResultContext);
 	return (
-		<div className="resultStandard resultCommon">
+		<div className="resultStandard resultCommon" >
 			<div>
 				<img src={imgMeloStd} alt="手を挙げるメロディーレーン"/>
 			</div>

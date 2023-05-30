@@ -116,8 +116,6 @@ header {
 			position: absolute;
 			top: 30px;
 			right: 0;
-			-webkit-backface-visibility:hidden;
-			backface-visibility:hidden;
 		}
 	}
 }
@@ -165,13 +163,13 @@ header {
 	&Standard {
 		align-self: flex-end;
 
-		> .selectMenuLink {
+		> .selectedStandard {
 			background-color: $lightblue;
 		}
 	}
 
 	&Various {
-		> .selectMenuLink {
+		> .selectedVarious {
 			background-color: $pink;
 		}
 	}
